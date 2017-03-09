@@ -190,9 +190,12 @@ cAns4.innerHTML = cAns4Str;
 
 var cAns5 = document.querySelector("#answer5")
 
+
 var cAns5Str = ""
 
 cIt8More.forEach(function(val){
+
+  cAns5Str += "\n"
 
   cAns5Str += (`${val.title} has ${val.materials.length} \n`)
 
