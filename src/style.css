@@ -11,7 +11,7 @@
   content: "";
   position: absolute;
   height: 5px;
-  border-top: 1px solid black;
+  border-top: 1px solid #CCC;
   top: 15px;
   width: 600px;
 }
@@ -40,21 +40,30 @@ h1 {
   font-size: 20px;
   font-family: Verdana, Geneva, sans-serif;
   font-weight: 100;
+  padding-left: 20px;
 }
 
 #cBannerImg {
 
-width: 100%; 
+width: 100%;
+height: 200px; 
 margin-bottom: -5px;
 
 }
 
-.container{
+.container {
   
   width: 1000px;
   margin: auto;
-  background-color: #EEE;
+  background-color: #FFF;
   overflow: hidden;
+}
+
+#cCont {
+
+  background-color: #EEE;
+  width: 100%;
+  height: 100%;
 }
 
 .question {
@@ -62,6 +71,7 @@ margin-bottom: -5px;
   
   width: 500px;
   margin: auto;
+  background-color: #EEE;
 
 }
 
@@ -74,6 +84,8 @@ margin-bottom: -5px;
   font-weight: 100;
   background-color: #eee;
   line-height: 30px;
+  margin-top: 0px;
+  color: #333;
 
 
 }
@@ -84,10 +96,11 @@ margin-bottom: -5px;
 .question pre {
 
   font-family: Verdana, Geneva, sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 100;
   text-align: center;
   white-space: pre-wrap; 
+  color: #333;
 }
 
 
@@ -95,6 +108,10 @@ body {
 
   background-color: #CCC;
 
+}
+
+#cPadding {
+  height: 50px;
 }
 
 
