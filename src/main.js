@@ -70,7 +70,7 @@ var cItWood = items.filter(function(val) {
 
 // ############################# 
 //  Question 4 
-// console.log(cItWood)
+console.log(cItWood)
 // #############################
 
 
@@ -93,18 +93,136 @@ var cIt8More = items.filter(function(val) {
 
 
 // ############################# 
+//  Question 5 
+// console.log(cIt8More[0].title)
+// console.log(cIt8More[0].materials)
+// console.log(cIt8More.length)
+// #############################
+
+
+
+var cItSelfMade = items.filter(function(val) { 
+
+
+  if (val.who_made === 'i_did') {
+
+    return val
+
+  }
+
+}).length
+
+//console.log(cItSelfMade)
+// used_manufacturer
+
+
+
+
+
+
+
+
+
+
+
+document.querySelector("#answer1").innerHTML = `
+The price is $${cItPrice}
+`
+
+
+
+var cAns2 = document.querySelector("#answer2")
+
+var cAns2Str = ""
+
+cItPriceRange.forEach(function(val){
+
+  cAns2Str += (val + "\n")
+
+})
+
+cAns2.innerHTML = cAns2Str;
+
+
+
+// ############################# 
+//  Question 3 **        &pound;
+// console.log(cItGbp[0].title)
+// console.log(cItGbp[0].price)
+// #############################
+
+var cAns3 = document.querySelector("#answer3")
+
+var cAns3Str = ""
+
+cAns3Str += (cItGbp[0].title)
+cAns3Str += (" &pound;" + cItGbp[0].price)
+
+cAns3.innerHTML = cAns3Str;
+
+
+// ############################# 
 //  Question 4 
 // console.log(cItWood)
 // #############################
 
-/*
-console.log(cIt8More[0].title)
-console.log(cIt8More[0].materials)
-console.log(cIt8More.length)
-*/
+
+var cAns4 = document.querySelector("#answer4")
+
+var cAns4Str = ""
+
+cItWood.forEach(function(val){
+
+  cAns4Str += (val + " is made of wood.\n")
+
+})
+
+cAns4.innerHTML = cAns4Str;
+
+
+// ############################# 
+//  Question 5 
+// console.log(cIt8More[0].title)
+// console.log(cIt8More[0].materials)
+// console.log(cIt8More.length)
+// #############################
+
+
+var cAns5 = document.querySelector("#answer5")
+
+var cAns5Str = ""
+
+cIt8More.forEach(function(val){
+
+  cAns5Str += (`${val.title} has ${val.materials.length} \n`)
+
+    val.materials.forEach(function(val){
+
+      cAns5Str += (`${val} \n`)
+
+    })
+
+})
+
+cAns5.innerHTML = cAns5Str;
 
 
 
+
+
+document.querySelector("#answer6").innerHTML = `
+
+${cItSelfMade} were made by their sellers.
+
+`
+
+
+
+
+
+
+
+// cItSelfMade
 
 
 
