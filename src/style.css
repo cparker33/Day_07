@@ -1,0 +1,108 @@
+.fancy {
+  line-height: 0.5;
+  text-align: center;
+}
+.fancy span {
+  display: inline-block;
+  position: relative; 
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-top: 1px solid black;
+  top: 15px;
+  width: 600px;
+}
+.fancy span:before {
+
+  right: 100%;
+  margin-right: 15px;
+
+}
+
+.fancy span:after {
+
+  left: 100%;
+  margin-left: 15px;
+
+}
+
+
+
+
+
+h1 {
+
+  color: #555; 
+  text-align: left; 
+  font-size: 20px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: 100;
+}
+
+#cBannerImg {
+
+width: 100%; 
+margin-bottom: -5px;
+
+}
+
+.container{
+  
+  width: 1000px;
+  margin: auto;
+  background-color: #EEE;
+  overflow: hidden;
+}
+
+.question {
+
+  
+  width: 500px;
+  margin: auto;
+
+}
+
+/* QUESTION */
+.question p {
+
+  padding-top: 50px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 25px;
+  font-weight: 100;
+  background-color: #eee;
+  line-height: 30px;
+
+
+}
+
+
+/* ANSWER */
+
+.question pre {
+
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 15px;
+  font-weight: 100;
+  text-align: center;
+  white-space: pre-wrap; 
+}
+
+
+body {
+
+  background-color: #CCC;
+
+}
+
+
+
+/*.question p span { */
+
+
+
+
+
+
